@@ -1,0 +1,1 @@
+execute unless entity @e[type=minecart,distance=..3] run summon minecart ~ ~0.5 ~ {CustomDisplayTile:1,DisplayState:{Name:"tnt"},CustomNameVisible:1,CustomName:"{\"color\":\"red\",\"text\":\"Fake TNT Cart / 偽TNT礦車\",\"italic\":false}"}
