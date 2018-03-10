@@ -1,13 +1,13 @@
 # [FTMC Railway Builder Tool](https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/)
-(applicable for Minecraft 1.13 Snapshot 18w08b)<br>
-Snapshot v0.13.8 Updated: Feb. 24, 2018<br>
+(applicable for Minecraft 1.13 Snapshot 18w10d)<br>
+Snapshot v0.13.10 Updated: Mar. 10, 2018<br>
 (For 1.12.x version, see on [this repo](https://github.com/flashteens/FTMCRailBuilder) instead.)<br>
 Here is the source code for the [Fully-Automatic Minecart Railway Builder Tool](https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/) available on PlanetMinecraft.
 * Please ensure that the original author **FlashTeens Chiang** should be referenced in your code when applying this tool.
 <br>
 <b><a href='https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/'>FTMC 全自動原版礦車鐵路指令工具</a></b><br>
-(適用於電腦版 Minecraft[Java] 1.13 快照版本 18w08b)<br>
-指令工具版本: Snapshot v0.1.8 (2018-02-24 更新)<br>
+(適用於電腦版 Minecraft[Java] 1.13 快照版本 18w10d)<br>
+指令工具版本: Snapshot v0.13.10 (2018-03-10 更新)<br>
 (本工具另有提供 1.12.x 專用版本，詳見<a href='https://github.com/flashteens/FTMCRailBuilder'>此連結</a>。)<br>
 這裡提供本人於 PlanetMinecraft 網站所發布<a href='https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/'>自動化礦車指令工具</a>的原始碼，歡迎多加利用。<br>
 ※ 使用本程式碼時，請註明原作者為 <b>FlashTeens Chiang</b>。
