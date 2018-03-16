@@ -1,4 +1,4 @@
 {
 	"replace": false,
-	"values": ["ftmc:subwayengine/main"]
+	"values": ["ftmc:subwayengine/main","ftmc:xlib/speedmonitor/display"]
 }
