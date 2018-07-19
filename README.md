@@ -19,7 +19,7 @@ By FlashTeens Chiang
 
 HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 1. Download the data packs (.zip files) from [this Google Drive Link](https://drive.google.com/open?id=1EqN13Qx_NxTx00wz4j64mXb0agOAUItS).
-* There are currently two data packs: "FTMC Railway Builder for 1.13" and "FTMC Speedometer". You may apply any (or both) of them into your Minecraft map on your demand, and each of the data packs should work independently.
+* There are currently two data packs: "<b>FTMC Railway Builder for 1.13</b>" and "<b>FTMC Speedometer</b>". You may apply any (or both) of them into your Minecraft map on your demand, and each of the data packs should work independently.
 * If you apply only "FTMC Speedometer" in your map, it's not necessary to do Steps 3. and 4 below.
 2. Move/Copy this data pack (without unzipping) into the folder 'datapacks' of your Minecraft map directory<br>
    (ex: '%appdata%\.minecraft\saves\YOUR_MAP_PROJECT\datapacks\')
@@ -32,8 +32,8 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 
 如何將此工具安裝在您的 Minecraft 地圖上：
 1. 從[這個 Google Drive 連結](https://drive.google.com/open?id=1EqN13Qx_NxTx00wz4j64mXb0agOAUItS)下載資料包 (data pack) 壓縮檔。
-* 內有兩個資料包: "FTMC Railway Builder for 1.13" (鐵路指令工具) and "FTMC Speedometer" (測速工具)，兩者皆可獨立運作，您可以視自己的需求決定在您的地圖中使用其中一個資料包，或兩者皆使用亦可。
-* 如果您在地圖中只有使用 "FTMC Speedometer" (測速工具)，則無需進行下列 3. 4. 兩個步驟。
+* 內有兩個資料包: "<b>FTMC Railway Builder for 1.13</b>" (鐵路指令工具) 及 "<b>FTMC Speedometer</b>" (測速工具)，兩者皆可獨立運作，您可以視自己的需求決定在您的地圖中使用其中一個資料包，或兩者皆使用亦可。
+* 如果您在地圖中只有使用 FTMC Speedometer (測速工具)，則無需進行下列 3. 4. 兩個步驟。
 2. 移動(或複製)這個資料包至 Minecraft 地圖目錄中的 'datapacks' 資料夾。(無需解壓縮)<br>
    (路徑格式如「%appdata%\.minecraft\saves\您的地圖\datapacks\」)
 3. 從 Minecraft 中進入您的地圖，在聊天介面中輸入以下指令：<br>
