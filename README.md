@@ -27,7 +27,7 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 3. Enter this map in your Minecraft, and type the following command in your chat:<br>
    /function ftmc:subwaybuilder/tools<br>
 4. You'll get a book in-game with clickable links. Click on any of the links to get the related contraption(s) for rapidly building fully-automatic minecart subway system in Minecraft. Have fun! :D
-* If you would like to build high-speed railway lines using the "<b>FTMC Bullet Cart v2 Engine</b>", please also get the tools using the following command:
+* If you would like to build high-speed railway lines using the "<b>FTMC Bullet Cart v2 Engine</b>", please also get the tools using the following command:<br>
    /function ftmc:bcartv2/builder/tools<br>
 * The manual for how to use the "<b>FTMC Bullet Cart v2 Engine</b>" will be available on PlanetMinecraft later today (Mar. 5)! Stay tuned~
 
@@ -43,6 +43,6 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 3. 從 Minecraft 中進入您的地圖，在聊天介面中輸入以下指令：<br>
    /function ftmc:subwaybuilder/tools<br>
 4. 輸入以上指令後，在遊戲中您將得到一本書，其中附有幾個連結，按下任一連結即可獲得對應的指令機關，可用以快速建造全自動的礦車地鐵系統。
-* 如需使用「<b>高速礦車指令工具</b>」來建造高鐵系統，請另行輸入以下指令取得相關工具:
+* 如需使用「<b>高速礦車指令工具</b>」來建造高鐵系統，請另行輸入以下指令取得相關工具:<br>
    /function ftmc:bcartv2/builder/tools<br>
 * 有關「<b>高速礦車指令工具</b>」的英文版使用說明，將於今日 (3/5) 稍後於 PlanetMinecraft 發布；中文版說明也將於數日後在巴哈姆特發布，敬請期待！
