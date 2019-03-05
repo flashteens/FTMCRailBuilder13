@@ -1,0 +1,1 @@
+give @p minecraft:command_block{BlockEntityTag:{Command:"function ftmc:bcartv2/builder/debug_cartdisp/put_zh",auto:1},display:{Name:"{\"text\":\"產生除錯專用子彈礦車 (中文版)\"}",Lore:["Debug BulletCart Generator (Chinese)"]}}

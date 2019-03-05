@@ -1,0 +1,1 @@
+setblock ~ ~ ~ minecraft:command_block[facing=east]{Command:"function ftmc:bcartv2/command/east",auto:0}
