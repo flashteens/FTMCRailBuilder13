@@ -30,9 +30,9 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 3. Enter this map in your Minecraft, and type the following command in your chat:<br>
    /function ftmc:subwaybuilder/tools<br>
 4. You'll get a book in-game with clickable links. Click on any of the links to get the related contraption(s) for rapidly building fully-automatic minecart subway system in Minecraft. Have fun! :D
-* If you would like to build high-speed railway lines using the "<b>FTMC Bullet Cart v2 Engine</b>", please also get the tools using the following command:<br>
+* If you would like to build high-speed railway lines using the "<b>FTMC Bullet Cart v2.1 Engine</b>", please also get the tools using the following command:<br>
    /function ftmc:bcartv2/builder/tools<br>
-* Check out [this tutorial on PlanetMinecraft](https://www.planetminecraft.com/mod/1-13-instant-high-speed-railway-builder-tool-datapack/) for how to use the "<b>FTMC Bullet Cart v2 Engine</b>".
+* Check out [this tutorial on PlanetMinecraft](https://www.planetminecraft.com/mod/1-13-instant-high-speed-railway-builder-tool-datapack/) for how to use the "<b>FTMC Bullet Cart v2.1 Engine</b>".
 
 
 ## 中文版說明 / Chinese Manual
@@ -41,7 +41,7 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 1. 從以下其中一個 Google Drive 連結下載資料包 (data pack) 壓縮檔。
   * [1.14 版本專用下載點](https://drive.google.com/open?id=1i0RpLMziBHDBAy-fdQtkVPNrEIFL-fe7)
   * [1.13.x 版本專用下載點](https://drive.google.com/open?id=1EqN13Qx_NxTx00wz4j64mXb0agOAUItS)
-* 內有三個資料包: "<b>FTMC Railway Builder for 1.13(1.14)</b>" (鐵路指令工具)、"<b>FTMC Bullet Cart v2 Engine</b>" (高速礦車指令工具) 及 "<b>FTMC Speedometer</b>" (測速工具)，三者皆可獨立運作，您可以視自己的需求決定在您的地圖中使用其中一部分的資料包，或全部使用亦可。
+* 內有三個資料包: "<b>FTMC Railway Builder for 1.13(1.14)</b>" (鐵路指令工具)、"<b>FTMC Bullet Cart v2.1 Engine</b>" (高速礦車指令工具) 及 "<b>FTMC Speedometer</b>" (測速工具)，三者皆可獨立運作，您可以視自己的需求決定在您的地圖中使用其中一部分的資料包，或全部使用亦可。
   * 如果您先前曾使用此工具於 1.13.x 版本中遊玩，則當您升級地圖到 1.14 之前，只需要更新前兩項「鐵路指令工具」與「高速礦車指令工具」即可，至於「測速工具」則可維持不變。
 * 如果您在地圖中只有使用 FTMC Speedometer (測速工具)，則無需進行下列 3. 4. 兩個步驟。
 2. 移動(或複製)這些資料包至 Minecraft 地圖目錄中的 'datapacks' 資料夾。(無需解壓縮)<br>
