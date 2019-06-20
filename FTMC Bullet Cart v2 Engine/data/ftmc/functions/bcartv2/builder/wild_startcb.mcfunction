@@ -1,1 +1,0 @@
-give @p minecraft:command_block{BlockEntityTag:{Command:"function ftmc:bcartv2/builder/wild_startcb/put",auto:1},display:{Name:"{\"text\":\"High-speed Mode Command Block\"}",Lore:["高速模式指令"]}}
