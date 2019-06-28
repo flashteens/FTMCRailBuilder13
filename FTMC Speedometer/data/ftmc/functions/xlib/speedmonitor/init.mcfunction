@@ -29,3 +29,7 @@ scoreboard objectives add ftmc_sm_const dummy
 scoreboard objectives add CurrentSpeed dummy
 
 scoreboard objectives setdisplay sidebar CurrentSpeed
+
+# initialize the timer to remove offline players' values
+scoreboard objectives add ftmc_sm_clrtimer dummy
+scoreboard players set #_GLOBAL ftmc_sm_clrtimer 0
