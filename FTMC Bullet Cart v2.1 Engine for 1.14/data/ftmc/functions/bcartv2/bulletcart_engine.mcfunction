@@ -1,5 +1,11 @@
+# show derailment message on debug carts (which are no longer in high-speed mode already)
+execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_derail_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_derailment
+
+# run the main engine.
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_sensor
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_tween
+
+execute as @e[tag=bcartv2,type=minecart,tag=ftbc_is_v22_enabled] at @s run function ftmc:bcartv2/engine/lowspeed
 
 execute as @e[tag=bcartv2,type=minecart,scores={bulletcartew=1..}] at @s run function ftmc:bcartv2/engine/east
 execute as @e[tag=bcartv2,type=minecart,scores={bulletcartew=..-1}] at @s run function ftmc:bcartv2/engine/west

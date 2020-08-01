@@ -1,8 +1,9 @@
 # Get speed limit changes. (Actual speed limit = ftbctargetspeed + 29)
-# If ftbctargetspeed is under zero (i.e. not boosted by BCart Engine at all),
-# then just consider it as if ftbctargetspeed = 0.
+# For v2.0-v2.1, the minimum value of ftbctargetspeed = 0 (actually 29 km/h),
+# and for v2.2+, the minimum value of ftbctargetspeed = -28 (actually 1 km/h).
 scoreboard players operation @s ftbc_debug_ts = @s ftbctargetspeed
-scoreboard players set @s[scores={ftbc_debug_ts=..-1}] ftbc_debug_ts 0
+scoreboard players set @s[scores={ftbc_debug_ts=..-1},tag=!ftbc_is_v22_enabled] ftbc_debug_ts 0
+scoreboard players set @s[scores={ftbc_debug_ts=..-29},tag=ftbc_is_v22_enabled] ftbc_debug_ts -28
 scoreboard players add @s ftbc_debug_ts 29
 
 # Get current speed (if the minecart is fully sped up by powered rails). (Actual speed = ftbcspeed + 29)
