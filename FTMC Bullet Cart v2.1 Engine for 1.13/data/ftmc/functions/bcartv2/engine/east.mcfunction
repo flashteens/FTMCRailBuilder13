@@ -1,4 +1,4 @@
-data merge entity @s {Motion:[1d,0d,0d]}
+data merge entity @s[tag=!ftbc_is_v22_enabled] {Motion:[1d,0d,0d]}
 execute as @s[tag=ftbc_speed_bit_0] at @s run teleport @s ~0.0139 ~ ~
 execute as @s[tag=ftbc_speed_bit_1] at @s run teleport @s ~0.0278 ~ ~
 execute as @s[tag=ftbc_speed_bit_2] at @s run teleport @s ~0.0556 ~ ~

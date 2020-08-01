@@ -1,6 +1,8 @@
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_sensor
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_tween
 
+execute as @e[tag=bcartv2,type=minecart,tag=ftbc_is_v22_enabled] at @s run function ftmc:bcartv2/engine/lowspeed
+
 execute as @e[tag=bcartv2,type=minecart,scores={bulletcartew=1..}] at @s run function ftmc:bcartv2/engine/east
 execute as @e[tag=bcartv2,type=minecart,scores={bulletcartew=..-1}] at @s run function ftmc:bcartv2/engine/west
 execute as @e[tag=bcartv2,type=minecart,scores={bulletcartns=1..}] at @s run function ftmc:bcartv2/engine/south
