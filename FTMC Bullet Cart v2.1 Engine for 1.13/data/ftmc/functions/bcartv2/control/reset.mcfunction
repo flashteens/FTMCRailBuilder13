@@ -14,6 +14,9 @@ scoreboard players set @s[type=minecart] BCartConfigID 0
 scoreboard players set @s[type=minecart] ftbc_accel_ntick 0
 scoreboard players set @s[type=minecart] ftbc_accelperiod 1
 
+# For v2.2+, remove the sensor initialization state from the carts.
+tag @s remove ftbc_v22_has_init_speedlimit
+
 # Indicates the old v2.0 engine, which is not applicable for new features on v2.1+ engine.
 # This line is also called when the high-speed mode of v2.1+ is turning off.
 tag @s remove ftbc_is_v21_enabled
