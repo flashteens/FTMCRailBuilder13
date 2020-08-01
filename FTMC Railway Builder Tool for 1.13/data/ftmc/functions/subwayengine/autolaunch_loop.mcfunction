@@ -38,6 +38,9 @@ execute as @e[type=minecart,tag=already_departed] at @s if entity @e[type=!minec
 tag @e[tag=bulletcart,type=minecart] remove to_be_removed
 tag @e[tag=bcartv2,type=minecart] remove to_be_removed
 
+# minecart auto-cleaning mechanism - do not apply to derailed debug BulletCarts that has not shown the message yet.
+tag @e[tag=ftbc_pending_for_debug_derail_msg,type=minecart] remove to_be_removed
+
 # minecart auto-cleaning mechanism - the removal process
 execute at @e[type=minecart,tag=to_be_removed] run playsound minecraft:entity.player.attack.crit block @a ~ ~ ~ 0.5
 kill @e[type=minecart,tag=to_be_removed]
