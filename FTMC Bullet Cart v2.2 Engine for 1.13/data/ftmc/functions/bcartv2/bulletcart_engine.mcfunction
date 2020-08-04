@@ -16,5 +16,8 @@ execute as @e[tag=bcartv2,type=minecart,scores={bulletcartns=..-1}] at @s run fu
 # automatically turn off high-speed mode if its emergency brake completes.
 execute as @e[tag=bcartv2,type=minecart,tag=ftbc_emerbrake,scores={ftbcspeed=..0}] at @s positioned ~ ~ ~ run function ftmc:bcartv2/control/off
 
+# automatically turn off high-speed mode if the cart is stopped by the Stopper command from the FTMC Railway Builder Tool datapack.
+execute as @e[tag=bcartv2,type=minecart,scores={ftcarttimer=1..}] at @s run function ftmc:bcartv2/control/off
+
 # fail-safe mechanism
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/failsafe
