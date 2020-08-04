@@ -3,6 +3,7 @@ execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_derail_msg] at 
 
 # run the main engine.
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_sensor
+execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/turn_by_direction
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/speed_tween
 
 execute as @e[tag=bcartv2,type=minecart,tag=ftbc_is_v22_enabled] at @s run function ftmc:bcartv2/engine/lowspeed
