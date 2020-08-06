@@ -20,7 +20,7 @@ By FlashTeens Chiang
 
 HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 1. Download the data packs (.zip files) from one of the Google Drive Links below:
-  * [Click here for 1.14](https://drive.google.com/open?id=1i0RpLMziBHDBAy-fdQtkVPNrEIFL-fe7)
+  * [Click here for 1.14+](https://drive.google.com/open?id=1i0RpLMziBHDBAy-fdQtkVPNrEIFL-fe7)
   * [Click here for 1.13.x](https://drive.google.com/open?id=1EqN13Qx_NxTx00wz4j64mXb0agOAUItS)
 * There are currently three data packs: "<b>FTMC Railway Builder for 1.13(1.14)</b>", "<b>FTMC Bullet Cart v2.3 Engine for 1.13(1.14)</b>", and "<b>FTMC Speedometer</b>". You may apply any (or all) of them into your Minecraft map on your demand, and each of the data packs should work independently.
   * If you are migrating your Minecraft 1.13.x map to 1.14+ with this tool, please just leave "<b>FTMC Speedometer</b>" unchanged, and update all the others above.
@@ -40,7 +40,7 @@ HOW TO SET UP THIS TOOL IN YOUR MINECRAFT MAP:
 
 如何將此工具安裝在您的 Minecraft 地圖上：
 1. 從以下其中一個 Google Drive 連結下載資料包 (data pack) 壓縮檔。
-  * [1.14 版本專用下載點](https://drive.google.com/open?id=1i0RpLMziBHDBAy-fdQtkVPNrEIFL-fe7)
+  * [1.14 (含) 以上版本專用下載點](https://drive.google.com/open?id=1i0RpLMziBHDBAy-fdQtkVPNrEIFL-fe7)
   * [1.13.x 版本專用下載點](https://drive.google.com/open?id=1EqN13Qx_NxTx00wz4j64mXb0agOAUItS)
 * 內有三個資料包: "<b>FTMC Railway Builder for 1.13(1.14)</b>" (鐵路指令工具)、"<b>FTMC Bullet Cart v2.3 Engine</b>" (子彈礦車指令工具) 及 "<b>FTMC Speedometer</b>" (測速工具)，三者皆可獨立運作，您可以視自己的需求決定在您的地圖中使用其中一部分的資料包，或全部使用亦可。
   * 如果您先前曾使用此工具於 1.13.x 版本中遊玩，則當您升級地圖到 1.14+ 之前，只需要更新前兩項「鐵路指令工具」與「子彈礦車指令工具」即可，至於「測速工具」則可維持不變。
