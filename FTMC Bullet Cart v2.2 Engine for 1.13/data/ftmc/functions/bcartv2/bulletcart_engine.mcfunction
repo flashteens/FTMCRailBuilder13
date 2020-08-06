@@ -1,4 +1,5 @@
-# show derailment message on debug carts (which are no longer in high-speed mode already)
+# show misc message on debug carts (derailment, stopper, BCv2 launcher events, etc.)
+execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_stopper_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_stoppercmd
 execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_derail_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_derailment
 
 # run the main engine.
@@ -17,7 +18,7 @@ execute as @e[tag=bcartv2,type=minecart,scores={bulletcartns=..-1}] at @s run fu
 execute as @e[tag=bcartv2,type=minecart,tag=ftbc_emerbrake,scores={ftbcspeed=..0}] at @s positioned ~ ~ ~ run function ftmc:bcartv2/control/off
 
 # automatically turn off high-speed mode if the cart is stopped by the Stopper command from the FTMC Railway Builder Tool datapack.
-execute as @e[tag=bcartv2,type=minecart,scores={ftcarttimer=1..}] at @s run function ftmc:bcartv2/control/off
+execute as @e[tag=bcartv2,type=minecart,scores={ftcarttimer=1..}] at @s run function ftmc:bcartv2/control/off_and_debug
 
 # fail-safe mechanism
 execute as @e[tag=bcartv2,type=minecart] at @s positioned ~ ~ ~ run function ftmc:bcartv2/engine/failsafe
