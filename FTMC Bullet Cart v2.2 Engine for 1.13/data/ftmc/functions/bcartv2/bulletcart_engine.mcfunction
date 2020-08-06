@@ -1,4 +1,5 @@
 # show misc message on debug carts (derailment, stopper, BCv2 launcher events, etc.)
+execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_launch_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_launch
 execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_stopper_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_stoppercmd
 execute as @e[type=minecart,tag=debug,tag=ftbc_pending_for_debug_derail_msg] at @s run function ftmc:bcartv2/engine/internal/show_debug_msg_derailment
 
