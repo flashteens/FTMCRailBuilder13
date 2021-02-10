@@ -1,10 +1,17 @@
 # Get speed limit changes. (Actual speed limit = ftbctargetspeed + 29)
 # For v2.0-v2.1, the minimum value of ftbctargetspeed = 0 (actually 29 km/h),
 # and for v2.2+, the minimum value of ftbctargetspeed = -28 (actually 1 km/h).
-scoreboard players operation @s ftbc_debug_ts = @s ftbctargetspeed
+scoreboard players operation @s ftbc_debug_ts0 = @s ftbctargetspeed
+scoreboard players set @s[scores={ftbc_debug_ts0=..-1},tag=!ftbc_is_v22_enabled] ftbc_debug_ts0 0
+scoreboard players set @s[scores={ftbc_debug_ts0=..-29},tag=ftbc_is_v22_enabled] ftbc_debug_ts0 -28
+scoreboard players add @s ftbc_debug_ts0 29
+
+# Apply max speed config to the display speed limit.
+scoreboard players operation @s ftbc_debug_ts = @s ftbcmaxspeed
 scoreboard players set @s[scores={ftbc_debug_ts=..-1},tag=!ftbc_is_v22_enabled] ftbc_debug_ts 0
 scoreboard players set @s[scores={ftbc_debug_ts=..-29},tag=ftbc_is_v22_enabled] ftbc_debug_ts -28
 scoreboard players add @s ftbc_debug_ts 29
+scoreboard players operation @s ftbc_debug_ts < @s ftbc_debug_ts0
 
 # Get current speed (if the minecart is fully sped up by powered rails). (Actual speed = ftbcspeed + 29)
 scoreboard players operation @s ftbc_debug_cs = @s ftbcspeed

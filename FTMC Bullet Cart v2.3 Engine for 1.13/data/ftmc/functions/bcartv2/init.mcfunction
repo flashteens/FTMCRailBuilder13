@@ -5,6 +5,7 @@ scoreboard objectives add bulletcartew dummy
 scoreboard objectives add bulletcartns dummy
 scoreboard objectives add ftbcspeed dummy
 scoreboard objectives add ftbctargetspeed dummy
+scoreboard objectives add ftbcmaxspeed dummy
 scoreboard objectives add ftbc_reg_div dummy
 scoreboard objectives add ftbc_reg_mod dummy
 scoreboard objectives add ftbc_reg_const dummy
@@ -18,12 +19,17 @@ scoreboard objectives add ftbc_reg_display dummy
 scoreboard objectives add ftbc_accel_ntick dummy
 scoreboard objectives add ftbc_accelperiod dummy
 
-# For Customization Configurations
+# For By-world Customization Configurations
+scoreboard objectives add BCartMaxSpeed dummy
+# Note: 'ftbcmaxspeed' as defined above is an internal value. Please adjust the max speed from the value 'BCartMaxSpeed' instead.
+
+# For By-cart Customization Configurations (deprecated)
 scoreboard objectives add BCartConfigID dummy
 
-# For Debug Display only (current speed, target speed, current x, current z, target distance, acceleration)
+# For Debug Display only (current speed, target speed, target speed without considering maxspeed config, current x, current z, target distance, acceleration)
 scoreboard objectives add ftbc_debug_cs dummy
 scoreboard objectives add ftbc_debug_ts dummy
+scoreboard objectives add ftbc_debug_ts0 dummy
 scoreboard objectives add ftbc_debug_x0 dummy
 scoreboard objectives add ftbc_debug_z0 dummy
 scoreboard objectives add ftbc_debug_d dummy

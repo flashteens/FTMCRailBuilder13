@@ -8,6 +8,7 @@ scoreboard players set @s[type=minecart] ftbc_sl_delta 0
 scoreboard players set @s[type=minecart] ftbc_sl_deltaold 0
 scoreboard players set @s[type=minecart] ftbc_funcid 0
 scoreboard players set @s[type=minecart] ftbc_funcid_old 0
+scoreboard players set @s[type=minecart] BCartMaxSpeed 0
 scoreboard players set @s[type=minecart] BCartConfigID 0
 
 execute if entity @s[type=minecart] run function ftmc:bcartv2/control/v2_2/load_motion
