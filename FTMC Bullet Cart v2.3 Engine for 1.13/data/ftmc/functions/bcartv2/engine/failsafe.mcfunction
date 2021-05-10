@@ -22,10 +22,6 @@ execute if block ~ ~ ~ cave_air run tag @s remove ftbc_suspended_mode
 execute if block ~ ~ ~ void_air run tag @s remove ftbc_suspended_mode
 
 
-execute if entity @s[tag=ftbc_failsafe_lock,tag=!ftbc_suspended_mode] run playsound minecraft:block.note.pling block flashteens 0 0 0 1000000 1.4142
-execute if entity @s[tag=ftbc_failsafe_lock,tag=ftbc_suspended_mode] run playsound minecraft:block.note.pling block flashteens 0 0 0 1000000 2.0000
-
-
 execute if entity @s[tag=ftbc_failsafe_lock,tag=!ftbc_suspended_mode] run function ftmc:bcartv2/control/off
 execute if entity @s[tag=debug,tag=ftbc_failsafe_lock,tag=!ftbc_suspended_mode] run tag @s add ftbc_pending_for_debug_derail_msg
 
