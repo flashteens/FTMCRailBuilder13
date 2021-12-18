@@ -12,6 +12,12 @@ execute if block ~ ~-1 ~ #rails if entity @s[tag=ftbc_failsafe_lock] run tp @s ~
 execute if block ~ ~-1 ~ #rails run tag @s remove ftbc_failsafe_lock
 
 
+# Teleport the minecart back to the rail according to the "magenta glazed terracotta" arrow indication.
+execute if entity @s[tag=ftbc_failsafe_lock] positioned ~ ~ ~ run function ftmc:bcartv2/engine/failsafe_arrowtp
+execute if entity @s[tag=ftbc_failsafe_lock] positioned ~ ~1 ~ run function ftmc:bcartv2/engine/failsafe_arrowtp
+execute if entity @s[tag=ftbc_failsafe_lock] positioned ~ ~-1 ~ run function ftmc:bcartv2/engine/failsafe_arrowtp
+
+
 # Suspending state: when it's not normal state, and Y=~ is not air (including unknown cases.)
 execute if entity @s[tag=ftbc_failsafe_lock] run tag @s add ftbc_suspended_mode
 execute if entity @s[tag=!ftbc_failsafe_lock] run tag @s remove ftbc_suspended_mode
