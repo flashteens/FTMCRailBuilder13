@@ -46,3 +46,6 @@ scoreboard objectives add ftbc_reg_6 dummy
 scoreboard objectives add ftbc_reg_7 dummy
 scoreboard objectives add ftbc_reg_8 dummy
 scoreboard objectives add ftbc_reg_9 dummy
+
+# Register variables for PaperMC 1.16+ teleportation fix only
+function ftmc:bcartv2/engine/fixtp/init_scores
