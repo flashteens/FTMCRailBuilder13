@@ -1,5 +1,7 @@
-tag @s add ftbc_failsafe_lock
+function ftmc:bcartv2/engine/fixtp/load_motion
 
+
+tag @s add ftbc_failsafe_lock
 
 # Normal state: when one of Y=~-1, Y=~, Y=~1 is a rail block.
 
@@ -32,3 +34,6 @@ execute if entity @s[tag=ftbc_failsafe_lock,tag=!ftbc_suspended_mode] run functi
 execute if entity @s[tag=debug,tag=ftbc_failsafe_lock,tag=!ftbc_suspended_mode] run tag @s add ftbc_pending_for_debug_derail_msg
 
 tag @s remove ftbc_failsafe_lock
+
+
+function ftmc:bcartv2/engine/fixtp/save_motion
