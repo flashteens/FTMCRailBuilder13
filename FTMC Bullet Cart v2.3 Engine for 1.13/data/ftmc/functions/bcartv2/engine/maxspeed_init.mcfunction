@@ -1,3 +1,6 @@
+# DEPRECATED since 2022-08-27
+# Refactored: split up into maxspeed_init_global and maxspeed_init_by_cart.
+
 # Note: unlike some other internal functions, this function does not require to be written within an /execute clause.
 
 execute unless score #ftbc_config BCartMaxSpeed matches 1..999 run scoreboard players set #ftbc_config BCartMaxSpeed 999

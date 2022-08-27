@@ -1,5 +1,1 @@
-# Run the minecart control loop function
-function ftmc:subwayengine/autolaunch_loop
-
-# subway departure sound loop function
-function ftmc:subwayengine/sfx_loop
+execute as @e[type=minecart] run function ftmc:subwayengine/main_inner
