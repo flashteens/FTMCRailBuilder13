@@ -8,6 +8,7 @@ tag @s[type=minecart,tag=delay_east_end] remove delay_east
 tag @s[type=minecart,tag=delay_east_end,scores={ftcarttimer=0}] remove delay_east_end
 execute as @s[type=minecart,tag=delay_east_end] run data merge entity @s {Motion:[0.25d,0d,0d]}
 tag @s[type=minecart,tag=delay_east_end,nbt={Invulnerable:0b}] add already_departed
+tag @s[type=minecart,tag=delay_east_end,nbt={Invulnerable:0b}] remove psd_mode
 
 # subway control loop function (south)
 execute as @s[type=minecart,tag=delay_south] run data merge entity @s {Motion:[0d,0d,0d]}
@@ -16,6 +17,7 @@ tag @s[type=minecart,tag=delay_south_end] remove delay_south
 tag @s[type=minecart,tag=delay_south_end,scores={ftcarttimer=0}] remove delay_south_end
 execute as @s[type=minecart,tag=delay_south_end] run data merge entity @s {Motion:[0d,0d,0.25d]}
 tag @s[type=minecart,tag=delay_south_end,nbt={Invulnerable:0b}] add already_departed
+tag @s[type=minecart,tag=delay_south_end,nbt={Invulnerable:0b}] remove psd_mode
 
 # subway control loop function (west)
 execute as @s[type=minecart,tag=delay_west] run data merge entity @s {Motion:[0d,0d,0d]}
@@ -24,6 +26,7 @@ tag @s[type=minecart,tag=delay_west_end] remove delay_west
 tag @s[type=minecart,tag=delay_west_end,scores={ftcarttimer=0}] remove delay_west_end
 execute as @s[type=minecart,tag=delay_west_end] run data merge entity @s {Motion:[-0.25d,0d,0d]}
 tag @s[type=minecart,tag=delay_west_end,nbt={Invulnerable:0b}] add already_departed
+tag @s[type=minecart,tag=delay_west_end,nbt={Invulnerable:0b}] remove psd_mode
 
 # subway control loop function (north)
 execute as @s[type=minecart,tag=delay_north] run data merge entity @s {Motion:[0d,0d,0d]}
@@ -32,10 +35,12 @@ tag @s[type=minecart,tag=delay_north_end] remove delay_north
 tag @s[type=minecart,tag=delay_north_end,scores={ftcarttimer=0}] remove delay_north_end
 execute as @s[type=minecart,tag=delay_north_end] run data merge entity @s {Motion:[0d,0d,-0.25d]}
 tag @s[type=minecart,tag=delay_north_end,nbt={Invulnerable:0b}] add already_departed
+tag @s[type=minecart,tag=delay_north_end,nbt={Invulnerable:0b}] remove psd_mode
 
 # minecart auto-cleaning mechanism - basic conditions
 execute as @s[type=minecart,tag=already_departed] run tag @s add to_be_removed
-execute as @s[type=minecart,tag=already_departed] at @s if entity @e[type=!minecart,limit=1,distance=..1] run tag @s remove to_be_removed
+execute as @s[type=minecart,tag=already_departed,tag=!psd_mode] at @s if entity @e[type=!minecart,limit=1,distance=..1] run tag @s remove to_be_removed
+execute as @s[type=minecart,tag=already_departed,tag=psd_mode] at @s if entity @p[distance=..4] run tag @s remove to_be_removed
 
 # minecart auto-cleaning mechanism - do not apply to BulletCarts (v1-v2) which are in high-speed mode.
 tag @s[tag=bulletcart,type=minecart] remove to_be_removed
