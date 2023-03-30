@@ -42,9 +42,12 @@ execute as @s[type=minecart,tag=already_departed] run tag @s add to_be_removed
 execute as @s[type=minecart,tag=already_departed,tag=!psd_mode] at @s if entity @e[type=!minecart,limit=1,distance=..1] run tag @s remove to_be_removed
 execute as @s[type=minecart,tag=already_departed,tag=psd_mode] at @s if entity @p[distance=..4] run tag @s remove to_be_removed
 
-# minecart auto-cleaning mechanism - do not apply to BulletCarts (v1-v2) which are in high-speed mode.
-tag @s[tag=bulletcart,type=minecart] remove to_be_removed
-tag @s[tag=bcartv2,type=minecart] remove to_be_removed
+# minecart auto-cleaning mechanism - do not apply to BulletCarts (v1-v2) which are in high-speed mode & currently carrying a player.
+#tag @s[tag=bulletcart,type=minecart] remove to_be_removed
+#tag @s[tag=bcartv2,type=minecart] remove to_be_removed
+tag @s[tag=ftbc_suspended_mode,type=minecart] remove to_be_removed
+execute as @s[tag=to_be_removed,tag=bulletcart,type=minecart] at @s if entity @p[distance=..30,nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
+execute as @s[tag=to_be_removed,tag=bcartv2,type=minecart] at @s if entity @p[distance=..30,nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
 
 # minecart auto-cleaning mechanism - do not apply to derailed debug BulletCarts that has not shown the message yet.
 tag @s[tag=ftbc_pending_for_debug_derail_msg,type=minecart] remove to_be_removed
