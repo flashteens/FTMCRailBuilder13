@@ -1,6 +1,12 @@
 #As: a minecart
 #At: undefined
 
+# (Since 20230528) bug fix: minecart would never depart if scoreboard value 'ftcarttimer' disappears (may be caused by player rejoining the map)
+execute as @s[type=minecart,tag=delay_east] unless entity @s[scores={ftcarttimer=0..}] run scoreboard players set @s ftcarttimer 1
+execute as @s[type=minecart,tag=delay_south] unless entity @s[scores={ftcarttimer=0..}] run scoreboard players set @s ftcarttimer 1
+execute as @s[type=minecart,tag=delay_west] unless entity @s[scores={ftcarttimer=0..}] run scoreboard players set @s ftcarttimer 1
+execute as @s[type=minecart,tag=delay_north] unless entity @s[scores={ftcarttimer=0..}] run scoreboard players set @s ftcarttimer 1
+
 # subway control loop function (east)
 execute as @s[type=minecart,tag=delay_east] run data merge entity @s {Motion:[0d,0d,0d]}
 tag @s[type=minecart,tag=delay_east,scores={ftcarttimer=1},nbt={Motion:[0d,0d,0d]}] add delay_east_end
