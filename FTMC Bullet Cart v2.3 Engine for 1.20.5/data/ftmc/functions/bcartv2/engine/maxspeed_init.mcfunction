@@ -1,0 +1,13 @@
+# DEPRECATED since 2022-08-27
+# Refactored: split up into maxspeed_init_global and maxspeed_init_by_cart.
+
+# Note: unlike some other internal functions, this function does not require to be written within an /execute clause.
+
+execute unless score #ftbc_config BCartMaxSpeed matches 1..999 run scoreboard players set #ftbc_config BCartMaxSpeed 999
+# execute as @e[tag=bcartv2,type=minecart] run scoreboard players operation @s BCartMaxSpeed = #ftbc_config BCartMaxSpeed
+
+# Update the internal value 'ftbcmaxspeed' for the convenience of calculation.
+# ftbcmaxspeed := min(#ftbc_config.BCartMaxSpeed, local.BCartMaxSpeed) - 29
+execute as @e[tag=bcartv2,type=minecart] run scoreboard players operation @s ftbcmaxspeed = #ftbc_config BCartMaxSpeed
+execute as @e[tag=bcartv2,type=minecart,scores={BCartMaxSpeed=1..}] run scoreboard players operation @s ftbcmaxspeed < @s BCartMaxSpeed
+execute as @e[tag=bcartv2,type=minecart] run scoreboard players remove @s ftbcmaxspeed 29

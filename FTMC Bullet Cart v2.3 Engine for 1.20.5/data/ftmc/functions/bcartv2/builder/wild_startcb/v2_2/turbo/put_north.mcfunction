@@ -1,0 +1,1 @@
+setblock ~ ~ ~ minecraft:command_block[facing=north]{Command:"function ftmc:bcartv2/command/v2_2/turbo/by_structure",auto:0}
