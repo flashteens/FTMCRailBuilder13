@@ -1,0 +1,1 @@
+give @p minecraft:command_block{BlockEntityTag:{Command:"function ftmc:subwaybuilder/wild_stopper_long/put",auto:1},display:{Name:"{\"text\":\"Minecart Stopper (10 seconds)\"}",Lore:["\"礦車發車指令 (停靠10秒)\""]}}
