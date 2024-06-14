@@ -1,0 +1,1 @@
+give @p minecraft:command_block[block_entity_data={id:"minecraft:command_block",Command:"function ftmc:bcartv2/builder/wild_startcb/v2_1/legacy/put",auto:1},custom_name="{\"text\":\"High-speed Mode Command (SuperTurbo - v2.1)\",\"color\":\"gold\"}",lore=["\"高速模式指令 (v2.1)\"","\"超強加速型\"","\"Acceleration: 20 km/h/s\""]]

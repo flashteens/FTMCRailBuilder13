@@ -1,0 +1,1 @@
+setblock ~ ~ ~ minecraft:command_block[facing=south]{Command:"function ftmc:bcartv2/command/v2_2/smooth/by_structure",auto:0}
