@@ -49,11 +49,13 @@ execute as @s[type=minecart,tag=already_departed,tag=!psd_mode] at @s if entity 
 execute as @s[type=minecart,tag=already_departed,tag=psd_mode] at @s if entity @p[distance=..4] run tag @s remove to_be_removed
 
 # minecart auto-cleaning mechanism - do not apply to BulletCarts (v1-v2) which are in high-speed mode & currently carrying a player.
-#tag @s[tag=bulletcart,type=minecart] remove to_be_removed
-#tag @s[tag=bcartv2,type=minecart] remove to_be_removed
 tag @s[tag=ftbc_suspended_mode,type=minecart] remove to_be_removed
 execute as @s[tag=to_be_removed,tag=bulletcart,type=minecart] at @s if entity @p[distance=..30,nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
 execute as @s[tag=to_be_removed,tag=bcartv2,type=minecart] at @s if entity @p[distance=..30,nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
+# **Workaround: also do not apply auto-cleaning for any high-speed BulletCarts currently in speed >= 200 km/h as long as there is any player riding a minecart in the world save (no matter who is riding on which minecart.)
+# **Reason: we cannot precisely determine if it is currently carrying a player under this condition, especially when there is a severe lag during the gameplay.
+execute as @s[tag=bulletcart,type=minecart,scores={ftbcspeed=171..}] at @s if entity @p[nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
+execute as @s[tag=bcartv2,type=minecart,scores={ftbcspeed=171..}] at @s if entity @p[nbt={RootVehicle:{Entity:{id:"minecraft:minecart"}}}] run tag @s remove to_be_removed
 
 # minecart auto-cleaning mechanism - do not apply to derailed debug BulletCarts that has not shown the message yet.
 tag @s[tag=ftbc_pending_for_debug_derail_msg,type=minecart] remove to_be_removed
