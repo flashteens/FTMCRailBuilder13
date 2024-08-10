@@ -1,3 +1,6 @@
+#As: a minecart
+#At: don't care
+
 # Initialize the acceleration parameters to adapt new versions when reloading this datapack in-game.
 execute unless entity @s[scores={ftbc_accel_ntick=0..}] run scoreboard players set @s ftbc_accel_ntick 0
 execute unless entity @s[scores={ftbc_accelperiod=1..}] run scoreboard players set @s ftbc_accelperiod 1
@@ -8,14 +11,14 @@ scoreboard players operation @s ftbc_accel_ntick %= @s ftbc_accelperiod
 
 # Gradually increase or decrease the current speed of each minecart.
 # [A] normal acceleration
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0,ftbcspeed=..970}] at @s if score @s ftbcspeed < @s ftbctargetspeed if score @s ftbcspeed < @s ftbcmaxspeed run scoreboard players add @s ftbcspeed 1
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0,ftbcspeed=..970}] if score @s ftbcspeed < @s ftbctargetspeed if score @s ftbcspeed < @s ftbcmaxspeed run scoreboard players add @s ftbcspeed 1
 # [B] normal braking
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=!ftbc_emerbrake] at @s if score @s ftbcspeed > @s ftbctargetspeed run tag @s add ftbc_normal_brake_cond
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=!ftbc_emerbrake] at @s if score @s ftbcspeed > @s ftbcmaxspeed run tag @s add ftbc_normal_brake_cond
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=ftbc_normal_brake_cond] at @s run scoreboard players remove @s ftbcspeed 1
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=ftbc_normal_brake_cond] at @s run tag @s remove ftbc_normal_brake_cond
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=!ftbc_emerbrake] if score @s ftbcspeed > @s ftbctargetspeed run tag @s add ftbc_normal_brake_cond
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=!ftbc_emerbrake] if score @s ftbcspeed > @s ftbcmaxspeed run tag @s add ftbc_normal_brake_cond
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=ftbc_normal_brake_cond] run scoreboard players remove @s ftbcspeed 1
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0},tag=ftbc_normal_brake_cond] run tag @s remove ftbc_normal_brake_cond
 # [C] emergency braking
-execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0,ftbcspeed=1..},tag=ftbc_emerbrake] at @s if score @s ftbcspeed > @s ftbctargetspeed run scoreboard players remove @s ftbcspeed 2
+execute as @s[tag=bcartv2,type=minecart,scores={ftbc_accel_ntick=0,ftbcspeed=1..},tag=ftbc_emerbrake] if score @s ftbcspeed > @s ftbctargetspeed run scoreboard players remove @s ftbcspeed 2
 
 # Avoid negative speed values. (for v2.1 and earlier, minimum speed is 29 km/h)
 scoreboard players set @s[tag=bcartv2,tag=!ftbc_is_v22_enabled,type=minecart,scores={ftbcspeed=..-1}] ftbcspeed 0

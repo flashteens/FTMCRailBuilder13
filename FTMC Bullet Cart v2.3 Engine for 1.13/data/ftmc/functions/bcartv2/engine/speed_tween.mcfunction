@@ -1,3 +1,6 @@
+#As: a minecart
+#At: don't care
+
 # Gradually increase or decrease the current speed of each minecart, according to its acceleration setting and target speed value.
 # (for v2.2 carts: unless ftbc_v22_has_init_speedlimit is not enabled)
 execute unless entity @s[tag=ftbc_is_v22_enabled,tag=!ftbc_v22_has_init_speedlimit] run function ftmc:bcartv2/engine/speed_tween_accel

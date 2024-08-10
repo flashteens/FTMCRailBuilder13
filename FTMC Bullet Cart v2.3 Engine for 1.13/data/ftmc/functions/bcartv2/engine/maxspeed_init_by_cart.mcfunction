@@ -1,5 +1,5 @@
 #As: a minecart
-#At: undefined
+#At: don't care
 
 # Update the internal value 'ftbcmaxspeed' for the convenience of calculation.
 # ftbcmaxspeed := min(#ftbc_config.BCartMaxSpeed, local.BCartMaxSpeed) - 29

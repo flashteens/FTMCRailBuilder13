@@ -1,3 +1,6 @@
+#As: a minecart
+#At: don't care
+
 tag @s[type=minecart] add bcartv2
 tag @s[type=minecart] remove ftbc_emerbrake
 scoreboard players set @s[type=minecart] bulletcartew 0
