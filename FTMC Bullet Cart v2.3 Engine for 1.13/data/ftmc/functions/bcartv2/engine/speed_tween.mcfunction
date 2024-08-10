@@ -2,19 +2,20 @@
 #At: don't care
 
 # Gradually increase or decrease the current speed of each minecart, according to its acceleration setting and target speed value.
+# Only applied for the first recursive iteration for each tick
 # (for v2.2 carts: unless ftbc_v22_has_init_speedlimit is not enabled)
-execute unless entity @s[tag=ftbc_is_v22_enabled,tag=!ftbc_v22_has_init_speedlimit] run function ftmc:bcartv2/engine/speed_tween_accel
+execute unless entity @s[tag=ftbc_is_v22_enabled,tag=!ftbc_v22_has_init_speedlimit] if score @s ftbc_recur_count matches 0 run function ftmc:bcartv2/engine/speed_tween_accel
 
 # Perform speed value bit operation for variable tp distances.
 # use the following 3 scoreboard values:
 # ftbc_reg_div, ftbc_reg_mod, ftbc_reg_const
 
 # The tags ftbc_speed_bit_0 (LSB) - ftbc_speed_bit_9 (MSB) will be used by engine functions for teleportation.
-# Result = BinaryPattern of MAX(ftbcspeed, 0)
-# Note that ftbcspeed is allowed to be negative since v2.2, but for such cases the binary pattern should still be zero.
+# Result = BinaryPattern of MAX(ftbc_recur_tpspd, 0)
+# Note that ftbc_recur_tpspd is allowed to be negative since v2.2, but for such cases the binary pattern should still be zero.
 
-# ftbc_reg_div := ftbcspeed
-scoreboard players operation @s ftbc_reg_div = @s ftbcspeed
+# ftbc_reg_div := ftbc_recur_tpspd
+scoreboard players operation @s ftbc_reg_div = @s ftbc_recur_tpspd
 
 # ftbc_reg_div := max(ftbc_reg_div, 0)
 scoreboard players set @s ftbc_reg_const 0

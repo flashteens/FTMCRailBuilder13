@@ -48,11 +48,20 @@ scoreboard objectives add ftbc_reg_8 dummy
 scoreboard objectives add ftbc_reg_9 dummy
 
 # [Since v2.5] temporary values to allow recursion for single-tick precise detection during high-speed operation
+# ftbc_recur_tpspd (teleportation speed value): Speed parameter to be teleported during a single recursive iteration
+# ftbc_recur_itspd (iteration speed value): The value to be decreased for each iteration until it turns to zero as the end condition
+# ftbc_recur_state: Only used in the function "bulletcart_engine_recur_next" to determine which axis (X/Y/Z) is under adjustment before running the next iteration
+# ftbc_recur_tpdmx, ftbc_recur_tpdmz (for micro teleportation): Only used for the first iteration, which may involve smaller teleportation distances (<72km/h)
+# ftbc_recur_count: Number of recursive iterations completed within the same tick
 scoreboard objectives add ftbc_recur_tpdx dummy
 scoreboard objectives add ftbc_recur_tpdy dummy
 scoreboard objectives add ftbc_recur_tpdz dummy
+scoreboard objectives add ftbc_recur_tpdmx dummy
+scoreboard objectives add ftbc_recur_tpdmz dummy
 scoreboard objectives add ftbc_recur_tpspd dummy
+scoreboard objectives add ftbc_recur_itspd dummy
 scoreboard objectives add ftbc_recur_state dummy
+scoreboard objectives add ftbc_recur_count dummy
 
 # Register variables for PaperMC 1.16+ teleportation fix only
 function ftmc:bcartv2/engine/fixtp/init_scores

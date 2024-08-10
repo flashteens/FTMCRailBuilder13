@@ -7,3 +7,5 @@ execute unless entity @s[scores={ftbc_reg_0=0}] run scoreboard players set @s bu
 
 execute if entity @s[scores={ftbc_reg_0=..-1}] run scoreboard players set @s bulletcartew -1
 execute if entity @s[scores={ftbc_reg_0=1..}] run scoreboard players set @s bulletcartew 1
+
+tellraw flashteens ["",{"color":"aqua","text":"- on_hori_conflict"}]

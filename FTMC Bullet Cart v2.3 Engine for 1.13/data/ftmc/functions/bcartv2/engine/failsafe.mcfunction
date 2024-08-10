@@ -7,9 +7,11 @@ tag @s add ftbc_failsafe_lock
 
 execute if block ~ ~ ~ #rails run tag @s remove ftbc_failsafe_lock
 
+execute if block ~ ~1 ~ #rails if entity @s[tag=ftbc_failsafe_lock] run scoreboard players add @s ftbc_recur_tpdy 1
 execute if block ~ ~1 ~ #rails if entity @s[tag=ftbc_failsafe_lock] run tp @s ~ ~1 ~
 execute if block ~ ~1 ~ #rails run tag @s remove ftbc_failsafe_lock
 
+execute if block ~ ~-1 ~ #rails if entity @s[tag=ftbc_failsafe_lock] run scoreboard players remove @s ftbc_recur_tpdy 1
 execute if block ~ ~-1 ~ #rails if entity @s[tag=ftbc_failsafe_lock] run tp @s ~ ~-1 ~
 execute if block ~ ~-1 ~ #rails run tag @s remove ftbc_failsafe_lock
 
