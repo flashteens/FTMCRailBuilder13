@@ -47,5 +47,12 @@ scoreboard objectives add ftbc_reg_7 dummy
 scoreboard objectives add ftbc_reg_8 dummy
 scoreboard objectives add ftbc_reg_9 dummy
 
+# [Since v2.5] temporary values to allow recursion for single-tick precise detection during high-speed operation
+scoreboard objectives add ftbc_recur_tpdx dummy
+scoreboard objectives add ftbc_recur_tpdy dummy
+scoreboard objectives add ftbc_recur_tpdz dummy
+scoreboard objectives add ftbc_recur_tpspd dummy
+scoreboard objectives add ftbc_recur_state dummy
+
 # Register variables for PaperMC 1.16+ teleportation fix only
 function ftmc:bcartv2/engine/fixtp/init_scores
