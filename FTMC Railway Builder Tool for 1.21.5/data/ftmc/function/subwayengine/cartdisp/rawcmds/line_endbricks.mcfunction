@@ -1,1 +1,1 @@
-execute unless entity @e[type=minecart,distance=..3] run summon minecart ~ ~0.5 ~ {CustomDisplayTile:1,DisplayState:{Name:"end_stone_bricks"},CustomNameVisible:1,CustomName:"\"Ender Bricks Minecart / 終界磚礦車\""}
+execute unless entity @e[type=minecart,distance=..3] run summon minecart ~ ~0.5 ~ {DisplayOffset:0,DisplayState:{Name:"end_stone_bricks"},CustomNameVisible:1,CustomName:"Ender Bricks Minecart / 終界磚礦車"}
