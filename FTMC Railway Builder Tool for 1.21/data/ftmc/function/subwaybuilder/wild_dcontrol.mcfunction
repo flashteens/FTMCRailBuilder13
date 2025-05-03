@@ -1,1 +1,1 @@
-give @p minecraft:repeating_command_block[block_entity_data={id:"minecraft:repeating_command_block",Command:"function ftmc:subwaybuilder/wild_dcontrol/put",auto:1},custom_name="{\"text\":\"Minecart Direction Control\"}",lore=["\"礦車順向裝置\""]]
+give @p minecraft:repeating_command_block[block_entity_data={id:"minecraft:command_block",Command:"function ftmc:subwaybuilder/wild_dcontrol/put",auto:1},custom_name="{\"text\":\"Minecart Direction Control\"}",lore=["\"礦車順向裝置\""]]
