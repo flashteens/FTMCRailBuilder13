@@ -1,0 +1,1 @@
+tellraw @s [{"color":"aqua","bold":true,"text":"Put this sign above the detector rail.\n請將此路牌放在壓力鐵軌上方。"}]

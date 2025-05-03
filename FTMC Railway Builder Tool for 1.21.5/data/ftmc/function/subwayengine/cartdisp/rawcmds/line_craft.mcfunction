@@ -1,0 +1,1 @@
+execute unless entity @e[type=minecart,distance=..3] run summon minecart ~ ~0.5 ~ {CustomDisplayTile:1,DisplayState:{Name:"crafting_table"},CustomNameVisible:1,CustomName:"\"Crafting Table Cart / 工作台礦車\""}
