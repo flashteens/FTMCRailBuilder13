@@ -1,11 +1,17 @@
 # [FTMC Railway Builder Tool](https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/)
-Snapshot v0.15.1a Updated: May 3, 2025<br>
+Datapack Versions:<br>
+- <b>RailwayBuilder:</b> Snapshot v0.15.1a (Last update: 2025-05-03)<br>
+- <b>BulletCart:</b> v2.3.3d (Last update: 2024-07-25)<br>
+- <b>Speedometer:</b> 2025-07-26<br>
 (For 1.12.x version, see on [this repo](https://github.com/flashteens/FTMCRailBuilder) instead. However, please note that some advanced features may not support 1.12.x.)<br>
 Here is the source code for the [Fully-Automatic Minecart Railway Builder Tool](https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/) available on PlanetMinecraft.
 * Please ensure that the original author **FlashTeens Chiang** should be referenced in your code when applying this tool.
 <br>
 <b><a href='https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/'>FTMC 全自動原版礦車鐵路指令工具</a></b><br>
-指令工具版本: Snapshot v0.15.1a (2025-05-03 更新)<br>
+指令工具版本:<br>
+- <b>RailwayBuilder:</b> Snapshot v0.15.1a (2025-05-03 更新)<br>
+- <b>BulletCart:</b> v2.3.3d (2024-07-25 更新)<br>
+- <b>Speedometer:</b> 2025-07-26<br>
 (本工具另有提供 1.12.x 專用版本，詳見<a href='https://github.com/flashteens/FTMCRailBuilder'>此連結</a>，但其中部分進階功能恕無法支援 1.12.x，造成不便敬請見諒。)<br>
 這裡提供本人於 PlanetMinecraft 網站所發布<a href='https://www.planetminecraft.com/mod/1-12-x-vanilla-mod-fully-automatic-minecart-railway-builder-tool/'>自動化礦車指令工具</a>的原始碼，歡迎多加利用。
 
@@ -17,7 +23,7 @@ By FlashTeens Chiang
 
 | Minecraft<br/>Java Edition | RailwayBuilder<br/>Datapack | BulletCart<br/>Datapack | Speedometer<br/>Datapack |
 | --- | --- | --- | --- |
-| **1.21.5** | ✅ <sup>([1.21.5+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Railway%20Builder%20Tool%20for%201.21.5))</sup> | ❌ <sup>([MC-297378](https://bugs.mojang.com/browse/MC/issues/MC-297378))</sup> | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Speedometer%20for%201.21))</sup> |
+| **1.21.5 - 1.21.8** | ✅ <sup>([1.21.5+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Railway%20Builder%20Tool%20for%201.21.5))</sup> | ❌ <sup>([MC-297378](https://bugs.mojang.com/browse/MC/issues/MC-297378))</sup> | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Speedometer%20for%201.21))</sup> |
 | **1.21.2 - 1.21.4** | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Railway%20Builder%20Tool%20for%201.21))</sup> | ❌ <sup>([MC-297378](https://bugs.mojang.com/browse/MC/issues/MC-297378))</sup> | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Speedometer%20for%201.21))</sup> |
 | **1.21 - 1.21.1** | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Railway%20Builder%20Tool%20for%201.21))</sup> | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Bullet%20Cart%20v2.3%20Engine%20for%201.21))</sup> | ✅ <sup>([1.21+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Speedometer%20for%201.21))</sup> |
 | **1.20.5 - 1.20.6** | ✅ <sup>([1.20.5+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Railway%20Builder%20Tool%20for%201.20.5))</sup> | ✅ <sup>([1.20.5+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Bullet%20Cart%20v2.3%20Engine%20for%201.20.5))</sup> | ✅ <sup>([1.13+](https://github.com/flashteens/FTMCRailBuilder13/tree/master/FTMC%20Speedometer%20for%201.13-1.20.5))</sup> |
