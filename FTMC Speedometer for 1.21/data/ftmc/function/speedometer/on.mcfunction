@@ -1,4 +1,4 @@
-# datapack enable "file/FTMC Speedometer"
-scoreboard objectives setdisplay sidebar CurrentSpeed
-scoreboard players reset #ftmc_speedometer_disabled CurrentSpeed
-tellraw @a {"text":"Speedometer has been enabled.\n已開啟測速功能。","color":"green","bold":true}
+# Implementation moved to 'show.mcfunction'.
+# This function has become an alias to the new function path since 2025-07-26.
+
+function ftmc:speedometer/show

@@ -1,4 +1,4 @@
-# datapack disable "file/FTMC Speedometer"
-scoreboard objectives setdisplay sidebar
-scoreboard players set #ftmc_speedometer_disabled CurrentSpeed 1
-tellraw @a {"text":"Speedometer has been disabled.\n已關閉測速功能。","color":"gold","bold":true}
+# Implementation moved to 'hide.mcfunction'.
+# This function has become an alias to the new function path since 2025-07-26.
+
+function ftmc:speedometer/hide

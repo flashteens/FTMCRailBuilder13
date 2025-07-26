@@ -28,7 +28,10 @@ scoreboard objectives add ftmc_sm_const dummy
 # the value to be displayed
 scoreboard objectives add CurrentSpeed dummy
 
-scoreboard objectives setdisplay sidebar CurrentSpeed
+# the value to store configurations
+scoreboard objectives add ftmc_sm_config dummy
+
+execute unless score #ftmc_speedometer_disabled ftmc_sm_config matches 1.. run scoreboard objectives setdisplay sidebar CurrentSpeed
 
 # initialize the timer to remove offline players' values
 scoreboard objectives add ftmc_sm_clrtimer dummy
